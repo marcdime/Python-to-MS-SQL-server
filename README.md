@@ -18,8 +18,9 @@ SELECT TOP (1000) [QuestionId]
       ,[Answer_Value]
   FROM [Survey_DB].[dbo].[Answer]
   ```
-- Survey table:  <mark>QuestionId, SurveyId, UserId, Answer_Value</mark>
-- Question table : <mark>QuestionId, Question_Text</mark>
+- Survey table:  QuestionId, SurveyId, UserId, Answer_Value
+- Question table : QuestionId, Question_Text
 - SurveyStructure: SurveyId, QuestionId, OrdinalValue
+
  *This table is the key table that describes the survey structure based on which we can extract the data.* 
-- User table : [UserId], [User_Name], [User_Email]
+- User table : UserId, User_Name, User_Email
