@@ -51,9 +51,9 @@ SELECT TOP (1000) [UserId]
 ...and save the extracted table into a .csv file
 
 
-**You must download the code python and compile the main file (init) to run the application. <br>
-The core python file contains the extract data function and the trigger function which updates all the modification of the *SurveyStructure* and save the last version into a .csv file. <br>
-The extracted data keep also updated following any change of the *SurveyStructure* update. The data is automatically saved into a .csv file.**
+**You must download the python code and compile the init file to run the application. <br>
+The core python file (main.py) contains the extracted data function and the trigger function which updates the extracted data due to any modification of the *SurveyStructure*. The app will save the last version of updated  *SurveyStructure* table into a .csv file. <br>
+The extracted data keep track of any change of the *SurveyStructure* table. The data is automatically saved into a .csv file.**
 
 Finally, demo with *jupyter notebook*.
 
