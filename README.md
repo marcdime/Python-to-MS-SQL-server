@@ -1,7 +1,7 @@
 # Python-to-MS-SQL-server
 Pilote pyodbc package to execute/send queries and retrieve data. 
 
-The aim of this tutorial is to use pyodbc package to send a request to the server in order to retrieve  data into a pivot table from the data in *survey_DB* database based on the *rules* defined in a table called *SurveyStructure*. 
+The aim of this tutorial is to use pyodbc package to send a request to the server in order to retrieve  data into a pivot table from the data in *Survey_DB* database based on the *rules* defined in a table called *SurveyStructure*. 
 
 Second purpose is to create a trigger in the python program running behind which update the extracted information each time there is an update of the dababase structure.
 
