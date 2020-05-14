@@ -28,7 +28,7 @@ SELECT TOP (1000) [SurveyId]
   FROM [Survey_Sample_A19].[dbo].[SurveyStructure]
   ```
  
-  ![Example of data extracted from two tables](sql_1.png)
+  ![Example of data extracted from two tables](images/sql_1.png)
  *and other tables with their columns :*  
 - Survey table:  QuestionId, SurveyId, UserId, Answer_Value
 - Question table : QuestionId, Question_Text (there are 4 questions i the survey)  
@@ -44,7 +44,7 @@ SELECT TOP (1000) [UserId]
       ,[ANS_Q4]
   FROM [Survey_DB].[dbo].[SurveyData]
 ```
-![wanted table :*SurveyData*](SurveyData.png)
+![wanted table :*SurveyData*](images/SurveyData.png)
 
 *NULL* value indicates the *questionID* does NOT exist in the *SurveyID* and the value "-1" means it does but the *User* does NOT answer to the question. Reminder : the rules are given in the *SurveyStructure* table !
 
