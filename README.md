@@ -26,7 +26,7 @@ SELECT TOP (1000) [SurveyId]
   FROM [Survey_Sample_A19].[dbo].[SurveyStructure]
   ```
   *This table is the key table that describes the survey structure based on which we can extract the data.* 
-  ![sql_1.png] Example of data extracted from two tables
+  ![sql_1.png](Example of data extracted from two tables)
   
 - Survey table:  QuestionId, SurveyId, UserId, Answer_Value
 - Question table : QuestionId, Question_Text  
