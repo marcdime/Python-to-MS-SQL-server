@@ -13,7 +13,7 @@ Instructions and description of the delivered files
 
 3. "main.py" is the core of the application which contains all functions and classes.
 
-4. "config.py" contains all the strings (queries, string-type variables*) used in "Assignment.py" file
+4. "config.py" contains all the strings (queries, string-type variables*) used in "main.py" file
 
 -----------------------------------
 
