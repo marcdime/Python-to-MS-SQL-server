@@ -42,9 +42,10 @@ SELECT TOP (1000) [UserId]
       ,[ANS_Q2]
       ,[ANS_Q3]
       ,[ANS_Q4]
-  FROM [Survey_DB].[dbo].[vw_AllSurveyData]
+  FROM [Survey_DB].[dbo].[SurveyData]
 ```
-![wanted table :*AllSurveyData*](SurveyData.png)
+![wanted table :*SurveyData*](SurveyData.png)
+
 *NULL* value indicates the *questionID* does NOT exist in the *SurveyID* and the value "-1" means it does but the *User* does NOT answer to the question. Reminder : the rules is given in the *SurveyStructure* table !
 
 ...and save the extracted table into a .csv file
