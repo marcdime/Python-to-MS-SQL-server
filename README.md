@@ -27,12 +27,9 @@ SELECT TOP (1000) [SurveyId]
       ,[OrdinalValue]
   FROM [Survey_Sample_A19].[dbo].[SurveyStructure]
   ```
- 
- 
-  ![Example of data extracted from two tables](sql_1.png)
- 
- **and other tables with their columns : **
   
+  ![Example of data extracted from two tables](sql_1.png)
+ *and other tables with their columns :*  
 - Survey table:  QuestionId, SurveyId, UserId, Answer_Value
 - Question table : QuestionId, Question_Text  
 - User table : UserId, User_Name, User_Email
