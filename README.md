@@ -30,8 +30,8 @@ SELECT TOP (1000) [SurveyId]
  
   ![Example of data extracted from two tables](images/sql_1.png)
  *and other tables with their columns :*  
-- Survey table:  QuestionId, SurveyId, UserId, Answer_Value
-- Question table : QuestionId, Question_Text (there are 4 questions i the survey)  
+- Survey table:  QuestionId, SurveyId, UserId, Answer_Value (there are 3 surveyId)
+- Question table : QuestionId, Question_Text (there are 4 questions in the survey)  
 - User table : UserId, User_Name, User_Email
 
 We want to extract the data embedding the following information :
