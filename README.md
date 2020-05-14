@@ -18,9 +18,7 @@ SELECT TOP (1000) [QuestionId]
       ,[Answer_Value]
   FROM [Survey_DB].[dbo].[Answer]
   ```
-- Survey table:  QuestionId, SurveyId, UserId, Answer_Value
-- Question table : QuestionId, Question_Text
-- SurveyStructure: SurveyId, QuestionId, OrdinalValue
+  - SurveyStructure: SurveyId, QuestionId, OrdinalValue
 ```java
 SELECT TOP (1000) [SurveyId]
       ,[QuestionId]
@@ -28,5 +26,9 @@ SELECT TOP (1000) [SurveyId]
   FROM [Survey_Sample_A19].[dbo].[SurveyStructure]
   ```
   *This table is the key table that describes the survey structure based on which we can extract the data.* 
+  ![sql_1.png] Example of data extracted from two tables
   
+- Survey table:  QuestionId, SurveyId, UserId, Answer_Value
+- Question table : QuestionId, Question_Text  
 - User table : UserId, User_Name, User_Email
+
