@@ -46,7 +46,7 @@ SELECT TOP (1000) [UserId]
 ```
 ![wanted table :*SurveyData*](SurveyData.png)
 
-*NULL* value indicates the *questionID* does NOT exist in the *SurveyID* and the value "-1" means it does but the *User* does NOT answer to the question. Reminder : the rules is given in the *SurveyStructure* table !
+*NULL* value indicates the *questionID* does NOT exist in the *SurveyID* and the value "-1" means it does but the *User* does NOT answer to the question. Reminder : the rules are given in the *SurveyStructure* table !
 
 ...and save the extracted table into a .csv file
 
