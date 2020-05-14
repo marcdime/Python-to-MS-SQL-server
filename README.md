@@ -10,7 +10,9 @@ The python app will save  the last survey structure and the extracted table as .
 # Database backup in the MS SQL server : 
 A dummy survey_DB (for illustration purpose only) contains tables **Survey, SurveyStructure, Question, Answer** and **User**. Features  of the tables at a glance : 
 
-- Answer table : QuestionId, SurveyId, UserId, Answer_Value
+- Answer table : QuestionId, SurveyId, UserId, Answer_Value <br>
+
+ *This table is the key table that describes the survey structure based on which we can extract the data.* 
 ```java
 SELECT TOP (1000) [QuestionId]
       ,[SurveyId]
@@ -25,8 +27,11 @@ SELECT TOP (1000) [SurveyId]
       ,[OrdinalValue]
   FROM [Survey_Sample_A19].[dbo].[SurveyStructure]
   ```
-  *This table is the key table that describes the survey structure based on which we can extract the data.* 
+ 
+ 
   ![Example of data extracted from two tables](sql_1.png)
+ 
+ **and other tables with their columns : **
   
 - Survey table:  QuestionId, SurveyId, UserId, Answer_Value
 - Question table : QuestionId, Question_Text  
