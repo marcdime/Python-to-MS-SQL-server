@@ -30,7 +30,6 @@ def updata(query):
         print("Query not found !")
     sql_conn.close()
 
-
 '''
 Function to create the folder containing all generated files
 '''
@@ -39,14 +38,12 @@ def create_file_path(name_folder, filename):
     os.makedirs(folder, exist_ok=True)
     return os.path.join(folder,filename)
 
-
 '''
 Function to display the dataframe retrieved from the getdata() function
 '''
 def display_data(input_query):
     get_data = getdata(input_query)
     return print(get_data.head(100))
-
 
 '''
 Iterator for SurveyID
@@ -66,8 +63,7 @@ class iter_Survey():
             return SurveyId
         else:
             raise StopIteration
-
-
+            
 '''
 Iterator for QuestionID
 '''
@@ -90,7 +86,6 @@ class iter_Question():
             return SurveyIdInQuestion, QuestionId, InSurvey
         else:
             raise StopIteration
-
 
 '''
 Function of the final query for getting pivot table
@@ -136,7 +131,6 @@ def get_query_AllSurvey():
         Query_union = Query_union.replace("SurveyID_value", str(CurrentSurveyID))
         
         final_query += Query_union + " UNION "
-
     
     #Delete the last "UNION" of the final_query query
     final_query = final_query[:-6]
@@ -184,7 +178,6 @@ class class_trigger():
             last_Survey_Structure.to_csv(filepath, sep=';')
             print (" Your SurveyStructure.csv file is created !")
             return False
-
 
     '''
     Methode properties:
@@ -234,7 +227,6 @@ class class_trigger():
             return False
         else:
             return True
-
 
 '''
 main() function
@@ -289,6 +281,4 @@ def main():
         display_data(query_for_AllSurvey)
 
     else:
-        print("Error: your input is invalid ! ")
-
-     
+        print("Error: your input is invalid ! ")     
